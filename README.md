@@ -6,7 +6,7 @@ You can use my test codes for testing your hardware.
 A doxigen html page is created of the main code (NOT of the test code).
 
 ## Why this project
-I needed a fun project to finish my propedeuse year on the Hogeschool Utrecht. After some thinking, I thought of this project. After some more thinking and some sketching, I finaly choose this project.
+I needed a fun project to finish my propedeuse year on the Hogeschool Utrecht. After some thinking, I came up with this project. After some more thinking and some sketching, I finally choose this project.
 
 ## Used hardware
 - Arduino DUE (to control everything)
