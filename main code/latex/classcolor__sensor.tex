@@ -1,0 +1,145 @@
+\hypertarget{classcolor__sensor}{}\doxysection{color\+\_\+sensor Class Reference}
+\label{classcolor__sensor}\index{color\_sensor@{color\_sensor}}
+
+
+Color sensor.  
+
+
+
+
+{\ttfamily \#include $<$color\+\_\+sensor.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcolor__sensor_a248241fb68bbe5ab2b6feca9aefbe569}{color\+\_\+sensor}} (hwlib\+::i2c\+\_\+bus \&i2c\+\_\+bus)
+\begin{DoxyCompactList}\small\item\em Constructor for the i2c\+\_\+bus. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classcolor__sensor_a255d0ecc80f69e8ed4ec14bdf556deff}{get\+\_\+data\+\_\+clear}} ()
+\begin{DoxyCompactList}\small\item\em Get the clear for the color sensor. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classcolor__sensor_a15e8e1708579668f75864be6738c32dd}{get\+\_\+data\+\_\+red}} ()
+\begin{DoxyCompactList}\small\item\em Get the red for the color sensor. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classcolor__sensor_ac8438f7fd955c32464529412c9c47f95}{get\+\_\+data\+\_\+green}} ()
+\begin{DoxyCompactList}\small\item\em Get the green for the color sensor. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classcolor__sensor_af6ac37635efa048164bcd16b382bcddd}{get\+\_\+data\+\_\+blue}} ()
+\begin{DoxyCompactList}\small\item\em Get the blue for the color sensor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcolor__sensor_a55faa2aab8f9b14e5fdba4e996e8fd24}{Set\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Writes the right settings to the color sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcolor__sensor_a09932dc874efaf7697b78071b7028021}\label{classcolor__sensor_a09932dc874efaf7697b78071b7028021}} 
+void {\bfseries ATIME} ()
+\item 
+\mbox{\Hypertarget{classcolor__sensor_a18b1c35b3eed3a9a0ac2320130395354}\label{classcolor__sensor_a18b1c35b3eed3a9a0ac2320130395354}} 
+void {\bfseries GAIN} ()
+\item 
+\mbox{\Hypertarget{classcolor__sensor_abd0e76c02cebcda0300178752c62cc34}\label{classcolor__sensor_abd0e76c02cebcda0300178752c62cc34}} 
+void {\bfseries enable} ()
+\item 
+\mbox{\Hypertarget{classcolor__sensor_a80e638205944a0f9cf2acb98225f071c}\label{classcolor__sensor_a80e638205944a0f9cf2acb98225f071c}} 
+uint8\+\_\+t {\bfseries ID} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcolor__sensor_a068f7a202cf96b1b8af0ac23d641f95f}\label{classcolor__sensor_a068f7a202cf96b1b8af0ac23d641f95f}} 
+bool {\bfseries Set\+Up\+\_\+\+Done}
+\item 
+\mbox{\Hypertarget{classcolor__sensor_a26a43231062c60b91dab0bb1fc0d1285}\label{classcolor__sensor_a26a43231062c60b91dab0bb1fc0d1285}} 
+hwlib\+::i2c\+\_\+bus \& {\bfseries i2c\+\_\+bus}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Color sensor. 
+
+This is a class that will read and write data to the TCS3472 color sensor.~\newline
+The i2c\+\_\+bus of hwlib is stored in the class.~\newline
+There are a few functions provided like Setup and get\+\_\+data\+\_\+red.~\newline
+~\newline
+Before you start to read the colors, use the Set\+Up function.~\newline
+If Set\+Up returns true, you are ready to go. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcolor__sensor_a248241fb68bbe5ab2b6feca9aefbe569}\label{classcolor__sensor_a248241fb68bbe5ab2b6feca9aefbe569}} 
+\index{color\_sensor@{color\_sensor}!color\_sensor@{color\_sensor}}
+\index{color\_sensor@{color\_sensor}!color\_sensor@{color\_sensor}}
+\doxysubsubsection{\texorpdfstring{color\_sensor()}{color\_sensor()}}
+{\footnotesize\ttfamily color\+\_\+sensor\+::color\+\_\+sensor (\begin{DoxyParamCaption}\item[{hwlib\+::i2c\+\_\+bus \&}]{i2c\+\_\+bus }\end{DoxyParamCaption})}
+
+
+
+Constructor for the i2c\+\_\+bus. 
+
+This constructor initializes a hwlib\+::i2c\+\_\+bus from the i2c\+\_\+bus.~\newline
+The Set\+Up\+\_\+\+Done is also constucted here, but the Set\+Up\+\_\+\+Done always starts as false. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcolor__sensor_af6ac37635efa048164bcd16b382bcddd}\label{classcolor__sensor_af6ac37635efa048164bcd16b382bcddd}} 
+\index{color\_sensor@{color\_sensor}!get\_data\_blue@{get\_data\_blue}}
+\index{get\_data\_blue@{get\_data\_blue}!color\_sensor@{color\_sensor}}
+\doxysubsubsection{\texorpdfstring{get\_data\_blue()}{get\_data\_blue()}}
+{\footnotesize\ttfamily uint16\+\_\+t color\+\_\+sensor\+::get\+\_\+data\+\_\+blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the blue for the color sensor. 
+
+This function reads the blue data of the color sensor.~\newline
+It will return a uint16\+\_\+t value.~\newline
+This function is used in the color recognition. \mbox{\Hypertarget{classcolor__sensor_a255d0ecc80f69e8ed4ec14bdf556deff}\label{classcolor__sensor_a255d0ecc80f69e8ed4ec14bdf556deff}} 
+\index{color\_sensor@{color\_sensor}!get\_data\_clear@{get\_data\_clear}}
+\index{get\_data\_clear@{get\_data\_clear}!color\_sensor@{color\_sensor}}
+\doxysubsubsection{\texorpdfstring{get\_data\_clear()}{get\_data\_clear()}}
+{\footnotesize\ttfamily uint16\+\_\+t color\+\_\+sensor\+::get\+\_\+data\+\_\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the clear for the color sensor. 
+
+This function reads the clear data of the color sensor.~\newline
+It will return a uint16\+\_\+t value.~\newline
+This function is used in the color recognition. \mbox{\Hypertarget{classcolor__sensor_ac8438f7fd955c32464529412c9c47f95}\label{classcolor__sensor_ac8438f7fd955c32464529412c9c47f95}} 
+\index{color\_sensor@{color\_sensor}!get\_data\_green@{get\_data\_green}}
+\index{get\_data\_green@{get\_data\_green}!color\_sensor@{color\_sensor}}
+\doxysubsubsection{\texorpdfstring{get\_data\_green()}{get\_data\_green()}}
+{\footnotesize\ttfamily uint16\+\_\+t color\+\_\+sensor\+::get\+\_\+data\+\_\+green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the green for the color sensor. 
+
+This function reads the green data of the color sensor.~\newline
+It will return a uint16\+\_\+t value.~\newline
+This function is used in the color recognition. \mbox{\Hypertarget{classcolor__sensor_a15e8e1708579668f75864be6738c32dd}\label{classcolor__sensor_a15e8e1708579668f75864be6738c32dd}} 
+\index{color\_sensor@{color\_sensor}!get\_data\_red@{get\_data\_red}}
+\index{get\_data\_red@{get\_data\_red}!color\_sensor@{color\_sensor}}
+\doxysubsubsection{\texorpdfstring{get\_data\_red()}{get\_data\_red()}}
+{\footnotesize\ttfamily uint16\+\_\+t color\+\_\+sensor\+::get\+\_\+data\+\_\+red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the red for the color sensor. 
+
+This function reads the red data of the color sensor.~\newline
+It will return a uint16\+\_\+t value.~\newline
+This function is used in the color recognition. \mbox{\Hypertarget{classcolor__sensor_a55faa2aab8f9b14e5fdba4e996e8fd24}\label{classcolor__sensor_a55faa2aab8f9b14e5fdba4e996e8fd24}} 
+\index{color\_sensor@{color\_sensor}!SetUp@{SetUp}}
+\index{SetUp@{SetUp}!color\_sensor@{color\_sensor}}
+\doxysubsubsection{\texorpdfstring{SetUp()}{SetUp()}}
+{\footnotesize\ttfamily bool color\+\_\+sensor\+::\+Set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Writes the right settings to the color sensor. 
+
+First checks if the ID of the color sensor is 0x44 or 0x4D.~\newline
+Another value means that the color sensor isn\textquotesingle{}t connected right.~\newline
+After that check, Setup will set the ATIME and the GAIN (both control how precise the sensor is).~\newline
+Last step is to turn on the color sensor, so it can \textquotesingle{}see\textquotesingle{} colors.~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{color__sensor_8hpp}{color\+\_\+sensor.\+hpp}}\item 
+color\+\_\+sensor.\+cpp\end{DoxyCompactItemize}

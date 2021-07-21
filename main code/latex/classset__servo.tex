@@ -1,0 +1,60 @@
+\hypertarget{classset__servo}{}\doxysection{set\+\_\+servo Class Reference}
+\label{classset__servo}\index{set\_servo@{set\_servo}}
+
+
+Set servo.  
+
+
+
+
+{\ttfamily \#include $<$servo.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classset__servo_a7bcdda77703b817e61acc504f5636882}{set\+\_\+servo}} (hwlib\+::pin\+\_\+out \&pin\+\_\+servo)
+\begin{DoxyCompactList}\small\item\em Constructor for the pin\+\_\+servo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classset__servo_abf0185e2f406e4a8c83b1c1d2c3d27c5}{set}} (int angle)
+\begin{DoxyCompactList}\small\item\em Sets a servo to given angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Set servo. 
+
+This is a class that will move a servo.~\newline
+The servo pin is stored in the class.~\newline
+There is a function provided that moves the servo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classset__servo_a7bcdda77703b817e61acc504f5636882}\label{classset__servo_a7bcdda77703b817e61acc504f5636882}} 
+\index{set\_servo@{set\_servo}!set\_servo@{set\_servo}}
+\index{set\_servo@{set\_servo}!set\_servo@{set\_servo}}
+\doxysubsubsection{\texorpdfstring{set\_servo()}{set\_servo()}}
+{\footnotesize\ttfamily set\+\_\+servo\+::set\+\_\+servo (\begin{DoxyParamCaption}\item[{hwlib\+::pin\+\_\+out \&}]{pin\+\_\+servo }\end{DoxyParamCaption})}
+
+
+
+Constructor for the pin\+\_\+servo. 
+
+This constructor initializes a hwlib\+::pin\+\_\+out from the pin\+\_\+servo.~\newline
+There is no default value of pin\+\_\+servo. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classset__servo_abf0185e2f406e4a8c83b1c1d2c3d27c5}\label{classset__servo_abf0185e2f406e4a8c83b1c1d2c3d27c5}} 
+\index{set\_servo@{set\_servo}!set@{set}}
+\index{set@{set}!set\_servo@{set\_servo}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void set\+\_\+servo\+::set (\begin{DoxyParamCaption}\item[{int}]{angle }\end{DoxyParamCaption})}
+
+
+
+Sets a servo to given angle. 
+
+This funtion sets the servo to a given angle.~\newline
+If the given angle is below 0, the angle is set to 0.~\newline
+If the given angle is above 180, the angle is set to 180. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{servo_8hpp}{servo.\+hpp}}\item 
+servo.\+cpp\end{DoxyCompactItemize}
