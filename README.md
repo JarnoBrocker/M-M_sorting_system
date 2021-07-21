@@ -1,1 +1,2 @@
-# M-M-sorting_system
+# M&M sorting system
+
